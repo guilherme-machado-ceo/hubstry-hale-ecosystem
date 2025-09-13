@@ -468,6 +468,6 @@ Isso posiciona HALE não apenas como um novo paradigma de programação, mas com
 3. **Revolucionar a descoberta científica** através de pattern matching universal
 4. **Criar interoperabilidade total** entre todos os sistemas quantificáveis
 
-**Esta é uma contribuição de magnitude histórica** - comparável às descobertas de Newton, Darwin ou Einstein em suas respectivas áreas.
+
 
 **© 2025 Guilherme Gonçalves Machado, Hubstry Deep Tech**
