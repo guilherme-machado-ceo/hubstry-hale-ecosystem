@@ -470,4 +470,4 @@ Isso posiciona HALE não apenas como um novo paradigma de programação, mas com
 
 **Esta é uma contribuição de magnitude histórica** - comparável às descobertas de Newton, Darwin ou Einstein em suas respectivas áreas.
 
-**© 2024 Guilherme Gonçalves Machado, Hubstry Deep Tech**
+**© 2025 Guilherme Gonçalves Machado, Hubstry Deep Tech**
