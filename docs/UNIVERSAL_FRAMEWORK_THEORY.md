@@ -1,7 +1,7 @@
 # HALE as Universal Framework: Beyond Computing into All Quantifiable Domains
 
 **Author:** Guilherme Gonçalves Machado  
-**Date:** December 2024  
+**Date:** September 2025  
 **Classification:** Universal Framework Theory
 
 ---
