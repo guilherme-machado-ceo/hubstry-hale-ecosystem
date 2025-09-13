@@ -28,6 +28,8 @@ HALE proposes a solution: a foundation for computing that is not arbitrary, but 
 
 ### 📖 Essential Reading
 - **[HALE Manifesto v1.4](HALE_Manifesto_v1.4.md)** - Complete theoretical foundation and vision
+- **[Scientific Position Paper](docs/HALE_SCIENTIFIC_POSITION.md)** - HALE's place in scientific tradition with formal arguments
+- **[Mathematical Foundations](docs/MATHEMATICAL_FOUNDATIONS.md)** - Rigorous mathematical formalization with LaTeX equations
 - **[Technical Specification](docs/TECHNICAL_SPECIFICATION.md)** - Implementation details and guidelines
 - **[Contributing Guide](CONTRIBUTING.md)** - How to participate in this revolutionary project
 
