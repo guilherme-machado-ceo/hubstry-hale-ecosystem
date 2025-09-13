@@ -470,6 +470,6 @@ The universe operates on harmonic principles. It is time for our computers to do
 
 ---
 
-**© 2024 Guilherme Gonçalves Machado, Hubstry Deep Tech. All rights reserved.**
+**© 2025 Guilherme Gonçalves Machado, Hubstry Deep Tech. All rights reserved.**
 
 *This work is licensed under Creative Commons Attribution-ShareAlike 4.0 International for theoretical content, and MIT License for any code implementations.*
