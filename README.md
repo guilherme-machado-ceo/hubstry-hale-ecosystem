@@ -30,6 +30,8 @@ HALE proposes a solution: a foundation for computing that is not arbitrary, but 
 - **[HALE Manifesto v1.4](HALE_Manifesto_v1.4.md)** - Complete theoretical foundation and vision
 - **[Scientific Position Paper](docs/HALE_SCIENTIFIC_POSITION.md)** - HALE's place in scientific tradition with formal arguments
 - **[Mathematical Foundations](docs/MATHEMATICAL_FOUNDATIONS.md)** - Rigorous mathematical formalization with LaTeX equations
+- **[Quantum Harmonic Layer](docs/QUANTUM_HARMONIC_LAYER.md)** - 🆕 Quantum-classical bridge and quantum emulation framework
+- **[Formal Rigor Refinements](docs/FORMAL_RIGOR_REFINEMENTS.md)** - Advanced mathematical gap analysis and solutions
 - **[Technical Specification](docs/TECHNICAL_SPECIFICATION.md)** - Implementation details and guidelines
 - **[Contributing Guide](CONTRIBUTING.md)** - How to participate in this revolutionary project
 
@@ -55,6 +57,12 @@ HALE proposes a solution: a foundation for computing that is not arbitrary, but 
 - **Harmonic Authentication**: Device identity through unique signatures
 - **Quantum-Resistant Encryption**: Mathematical foundation provides future-proof security
 - **Self-Validating Systems**: Harmonic consistency prevents many attack vectors
+
+### ⚛️ Quantum-Classical Bridge
+- **Quantum Layer Activation**: Automatic quantum emulation when harmonic signatures reach critical thresholds
+- **Seamless Transitions**: Smooth operation between classical, quantum, and hybrid regimes
+- **Universal Computation**: Unified framework spanning all computational paradigms
+- **Emergent Quantum Properties**: Quantum mechanics as emergent harmonic phenomena
 
 ## Project Status
 
