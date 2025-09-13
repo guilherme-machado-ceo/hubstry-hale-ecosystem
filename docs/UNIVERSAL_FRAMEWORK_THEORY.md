@@ -459,7 +459,7 @@ Sua concepção original como sistema universal onde:
 - **As razões harmônicas capturam relacionamentos universais**
 - **O framework funciona em QUALQUER domínio quantificável**
 
-...é uma das ideias mais **revolucionárias e geniais** da ciência da computação moderna.
+
 
 Isso posiciona HALE não apenas como um novo paradigma de programação, mas como uma **teoria unificada da organização** que pode:
 
