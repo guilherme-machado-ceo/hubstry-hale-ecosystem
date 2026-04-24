@@ -1,0 +1,359 @@
+// Basic HOP (Harmonic-Oriented Programming) Syntax Examples
+// This file demonstrates the core concepts of HOP programming
+
+// ============================================================================
+// 1. FUNDAMENTAL CLASS DEFINITIONS
+// ============================================================================
+
+// Base class representing any physical entity
+@HarmonicClass(
+    signature = [(1,1)],                    // Fundamental harmonic
+    dimensions = [SUBSTANCE],               // Aristotelian category
+    description = "Base class for all physical entities"
+)
+class PhysicalEntity {
+    
+    // Every physical entity has a unique HALE address
+    @HarmonicProperty(
+        ratio = (1,1),
+        dimension = SUBSTANCE,
+        immutable = true
+    )
+    protected HALEAddress address;
+    
+    // Constructor automatically generates HALE address
+    public PhysicalEntity() {
+        this.address = HALEAddressGenerator.generate(this.getClass().getSignature());
+    }
+    
+    // Basic existence method - all physical entities can "exist"
+    @HarmonicMethod(
+        resonance = (1,1),
+        description = "Fundamental existence operation"
+    )
+    public boolean exists() {
+        return this.address != null && this.address.isValid();
+    }
+}
+
+// ============================================================================
+// 2. INHERITANCE THROUGH HARMONIC EXTENSION
+// ============================================================================
+
+// Living entities extend physical entities with life harmonics
+@HarmonicClass(
+    signature = [(1,1), (3,2)],            // Physical + Life harmonic
+    dimensions = [SUBSTANCE, QUALITY],      // Substance + Quality of being alive
+    extends = PhysicalEntity.class
+)
+class LivingEntity extends PhysicalEntity {
+    
+    // Life span as a harmonic property
+    @HarmonicProperty(
+        ratio = (5,4),                      // Major third for life duration
+        dimension = TIME,
+        type = CONTINUOUS
+    )
+    protected double lifeSpan;
+    
+    // Energy level with harmonic signature
+    @HarmonicProperty(
+        ratio = (7,6),                      // Septimal minor third for energy
+        dimension = QUANTITY,
+        type = CONTINUOUS,
+        range = [0.0, 1.0]
+    )
+    protected double energyLevel;
+    
+    // Living entities can grow
+    @HarmonicMethod(
+        resonance = (9,8),                  // Major second for growth
+        input_harmonics = [(1,1), (3,2)],  // Requires existence and life
+        output_harmonics = [(5,4)]         // Affects life span
+    )
+    public void grow(double amount) {
+        this.lifeSpan += amount * this.energyLevel;
+        // Harmonic validation ensures growth is consistent with life harmonics
+        HarmonicValidator.validateGrowth(this, amount);
+    }
+    
+    // Reproduction creates new harmonic instances
+    @HarmonicMethod(
+        resonance = (11,10),                // Neutral second for reproduction
+        input_harmonics = [(1,1), (3,2), (5,4)],
+        output_harmonics = [(1,1), (3,2)]  // Creates new living entity
+    )
+    public LivingEntity reproduce() {
+        // Create offspring with similar but unique harmonic signature
+        LivingEntity offspring = new LivingEntity();
+        offspring.inheritHarmonics(this, 0.8); // 80% harmonic similarity
+        return offspring;
+    }
+}
+
+// ============================================================================
+// 3. COMPLEX HARMONIC HIERARCHIES
+// ============================================================================
+
+// Animals add consciousness and movement harmonics
+@HarmonicClass(
+    signature = [(1,1), (3,2), (4,3)],     // Physical + Life + Consciousness
+    dimensions = [SUBSTANCE, QUALITY, ACTION],
+    extends = LivingEntity.class
+)
+class Animal extends LivingEntity {
+    
+    // Consciousness level
+    @HarmonicProperty(
+        ratio = (8,7),                      // Septimal whole tone for awareness
+        dimension = QUALITY,
+        type = CONTINUOUS
+    )
+    protected double consciousnessLevel;
+    
+    // Movement capability
+    @HarmonicProperty(
+        ratio = (9,7),                      // Septimal major third for mobility
+        dimension = ACTION,
+        type = DISCRETE
+    )
+    protected MovementType movementType;
+    
+    // Animals can move with harmonic validation
+    @HarmonicMethod(
+        resonance = (12,7),                 // Septimal tritone for movement
+        input_harmonics = [(1,1), (3,2), (4,3)],
+        constraints = [POSITIVE_ENERGY, VALID_DIRECTION]
+    )
+    public MovementResult move(Direction direction, double speed) {
+        // Harmonic analysis determines movement efficiency
+        double efficiency = HarmonicAnalyzer.calculateMovementEfficiency(
+            this.getSignature(), direction, speed
+        );
+        
+        // Update position based on harmonic calculations
+        this.address = this.address.updatePosition(direction, speed * efficiency);
+        
+        return new MovementResult(efficiency, this.address);
+    }
+    
+    // Communication through harmonic resonance
+    @HarmonicMethod(
+        resonance = (15,8),                 // Major seventh for communication
+        input_harmonics = [(4,3)],          // Requires consciousness
+        output_harmonics = [(15,8)]         // Produces communication harmonic
+    )
+    public void communicate(Animal target, Message message) {
+        // Calculate harmonic compatibility for communication
+        double resonance = HarmonicAnalyzer.calculateResonance(
+            this.getSignature(), target.getSignature()
+        );
+        
+        if (resonance > 0.5) {  // Sufficient harmonic compatibility
+            target.receiveMessage(message, resonance);
+        }
+    }
+}
+
+// ============================================================================
+// 4. SPECIFIC IMPLEMENTATIONS
+// ============================================================================
+
+// Mammals add warm-blooded and nurturing harmonics
+@HarmonicClass(
+    signature = [(1,1), (3,2), (4,3), (5,3)],  // Animal + Mammalian harmonic
+    dimensions = [SUBSTANCE, QUALITY, ACTION, RELATION],
+    extends = Animal.class
+)
+class Mammal extends Animal {
+    
+    // Body temperature regulation
+    @HarmonicProperty(
+        ratio = (16,9),                     // Pythagorean minor seventh for temperature
+        dimension = QUALITY,
+        type = CONTINUOUS,
+        homeostatic = true
+    )
+    protected double bodyTemperature;
+    
+    // Nurturing behavior
+    @HarmonicProperty(
+        ratio = (6,5),                      // Minor third for nurturing
+        dimension = RELATION,
+        type = BEHAVIORAL
+    )
+    protected NurturingBehavior nurturingBehavior;
+    
+    // Mammals can nurse offspring
+    @HarmonicMethod(
+        resonance = (20,11),                // Complex ratio for nurturing
+        input_harmonics = [(5,3), (6,5)],  // Requires mammalian and nurturing harmonics
+        target_harmonics = [(1,1), (3,2)]  // Targets living entities
+    )
+    public void nurse(Mammal offspring) {
+        // Transfer energy through harmonic resonance
+        double energyTransfer = this.energyLevel * 0.1;
+        offspring.energyLevel += energyTransfer;
+        this.energyLevel -= energyTransfer;
+        
+        // Strengthen harmonic bond
+        HarmonicBondManager.strengthen(this.address, offspring.address);
+    }
+}
+
+// ============================================================================
+// 5. CONCRETE INSTANCES WITH UNIQUE SIGNATURES
+// ============================================================================
+
+// Specific cat implementation
+@HarmonicClass(
+    signature = [(1,1), (3,2), (4,3), (5,3), (7,4)],  // Mammal + Feline harmonic
+    dimensions = [SUBSTANCE, QUALITY, ACTION, RELATION, POSITION],
+    extends = Mammal.class
+)
+class Cat extends Mammal {
+    
+    // Agility specific to cats
+    @HarmonicProperty(
+        ratio = (21,16),                    // Complex ratio for feline agility
+        dimension = ACTION,
+        type = CONTINUOUS
+    )
+    protected double agility;
+    
+    // Hunting instinct
+    @HarmonicProperty(
+        ratio = (11,8),                     // Neutral fourth for predatory behavior
+        dimension = ACTION,
+        type = INSTINCTUAL
+    )
+    protected HuntingInstinct huntingInstinct;
+    
+    // Cats can purr - unique harmonic signature
+    @HarmonicMethod(
+        resonance = (25,16),                // Unique purring harmonic
+        input_harmonics = [(7,4)],          // Requires feline harmonic
+        output_harmonics = [(25,16)]        // Produces purr harmonic
+    )
+    public PurrSound purr(double intensity) {
+        // Generate harmonic purr based on cat's unique signature
+        HarmonicFrequency purrFreq = new HarmonicFrequency(25, 16, intensity);
+        return new PurrSound(purrFreq, this.address);
+    }
+    
+    // Enhanced movement for cats
+    @Override
+    @HarmonicMethod(
+        resonance = (28,15),                // Enhanced movement harmonic
+        input_harmonics = [(7,4), (21,16)] // Feline + agility harmonics
+    )
+    public MovementResult move(Direction direction, double speed) {
+        // Cats have enhanced movement due to agility
+        double enhancedSpeed = speed * (1.0 + this.agility);
+        return super.move(direction, enhancedSpeed);
+    }
+}
+
+// ============================================================================
+// 6. OBJECT INSTANTIATION AND USAGE
+// ============================================================================
+
+public class HarmonicProgrammingExample {
+    
+    public static void main(String[] args) {
+        
+        // Create specific cat instances with unique harmonic signatures
+        Cat whiskers = new Cat()
+            .withHarmonic(13, 8)        // Unique color harmonic
+            .withHarmonic(17, 12)       // Unique personality harmonic
+            .withHarmonic(19, 16)       // Unique size harmonic
+            .inDimension(PLACE, new Coordinates(10.5, 20.3, 5.1))
+            .generateUniqueAddress();
+        
+        Cat mittens = new Cat()
+            .withHarmonic(23, 16)       // Different color harmonic
+            .withHarmonic(29, 20)       // Different personality harmonic
+            .withHarmonic(31, 24)       // Different size harmonic
+            .inDimension(PLACE, new Coordinates(15.2, 18.7, 4.8))
+            .generateUniqueAddress();
+        
+        // Demonstrate harmonic polymorphism
+        Animal[] animals = {whiskers, mittens};
+        
+        for (Animal animal : animals) {
+            // Polymorphic method calls resolved through harmonic analysis
+            animal.move(Direction.NORTH, 2.0);
+            
+            // Type checking through harmonic signature analysis
+            if (HarmonicTypeChecker.isInstanceOf(animal, Cat.class)) {
+                Cat cat = (Cat) animal;
+                cat.purr(0.8);  // Only cats can purr
+            }
+            
+            // Harmonic compatibility checking
+            for (Animal other : animals) {
+                if (animal != other) {
+                    double compatibility = HarmonicAnalyzer.calculateCompatibility(
+                        animal.getSignature(), other.getSignature()
+                    );
+                    
+                    if (compatibility > 0.7) {
+                        animal.communicate(other, new Message("Hello!"));
+                    }
+                }
+            }
+        }
+        
+        // Demonstrate harmonic inheritance verification
+        assert HarmonicTypeChecker.isSubtype(Cat.class, Mammal.class);
+        assert HarmonicTypeChecker.isSubtype(Mammal.class, Animal.class);
+        assert HarmonicTypeChecker.isSubtype(Animal.class, LivingEntity.class);
+        assert HarmonicTypeChecker.isSubtype(LivingEntity.class, PhysicalEntity.class);
+        
+        // Show unique addressing
+        System.out.println("Whiskers HALE Address: " + whiskers.getAddress());
+        System.out.println("Mittens HALE Address: " + mittens.getAddress());
+        
+        // Addresses are mathematically unique
+        assert !whiskers.getAddress().equals(mittens.getAddress());
+        
+        // But they share common harmonic signatures for their shared types
+        assert HarmonicAnalyzer.shareSignature(whiskers, mittens, Cat.class);
+        assert HarmonicAnalyzer.shareSignature(whiskers, mittens, Mammal.class);
+        assert HarmonicAnalyzer.shareSignature(whiskers, mittens, Animal.class);
+    }
+}
+
+// ============================================================================
+// 7. HARMONIC UTILITY CLASSES
+// ============================================================================
+
+// Supporting classes for harmonic operations
+class HarmonicAnalyzer {
+    public static double calculateResonance(HarmonicSignature sig1, HarmonicSignature sig2) {
+        // Calculate harmonic resonance between two signatures
+        Set<HarmonicRatio> intersection = Sets.intersection(sig1.getRatios(), sig2.getRatios());
+        Set<HarmonicRatio> union = Sets.union(sig1.getRatios(), sig2.getRatios());
+        return (double) intersection.size() / union.size();
+    }
+    
+    public static boolean shareSignature(Object obj1, Object obj2, Class<?> type) {
+        HarmonicSignature sig1 = HarmonicReflection.getSignature(obj1, type);
+        HarmonicSignature sig2 = HarmonicReflection.getSignature(obj2, type);
+        return sig1.equals(sig2);
+    }
+}
+
+class HarmonicTypeChecker {
+    public static boolean isInstanceOf(Object obj, Class<?> type) {
+        HarmonicSignature objSig = HarmonicReflection.getSignature(obj);
+        HarmonicSignature typeSig = HarmonicReflection.getClassSignature(type);
+        return objSig.contains(typeSig);
+    }
+    
+    public static boolean isSubtype(Class<?> child, Class<?> parent) {
+        HarmonicSignature childSig = HarmonicReflection.getClassSignature(child);
+        HarmonicSignature parentSig = HarmonicReflection.getClassSignature(parent);
+        return childSig.contains(parentSig);
+    }
+}
