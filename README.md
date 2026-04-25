@@ -11,32 +11,32 @@
 ---
 ## Incrementos / Latest Implementations
 
-| Módulo | Arquivo | Descrição |
+| M�dulo | Arquivo | Descri��o |
 |--------|---------|-----------|
-| **HALE Pipeline** | hale_core/hale_equation.py | Pipeline: f0 - H - h - ψ - c - M - g |
-| **Funções ψ1-ψ4** | hale_core/psi_functions.py | 4 funções de endereçamento selecionáveis |
-| **Omnigrid 2D** | hpg_core/omnigrid.py | Grade O_N = H_N × {-1,+1} com Euler |
-| **HPM 1.0** | hpg_core/hpm_config.py | 12 canais harmônicos (f0=16.384 kHz) |
-| **Sinal s(t) + FFT** | hpg_core/signal_processing.py | Sinal composto + decodificação FFT |
-| **Verificação Espectral** | hpg_core/spectral_verification.py | Integridade de razões racionais |
+| **HALE Pipeline** | hale_core/hale_equation.py | Pipeline: f0 - H - h - ? - c - M - g |
+| **Fun��es ?1-?4** | hale_core/psi_functions.py | 4 fun��es de endere�amento selecion�veis |
+| **Omnigrid 2D** | hpg_core/omnigrid.py | Grade O_N = H_N � {-1,+1} com Euler |
+| **HPM 1.0** | hpg_core/hpm_config.py | 12 canais harm�nicos (f0=16.384 kHz) |
+| **Sinal s(t) + FFT** | hpg_core/signal_processing.py | Sinal composto + decodifica��o FFT |
+| **Verifica��o Espectral** | hpg_core/spectral_verification.py | Integridade de raz�es racionais |
 | **HSL Auth** | security/hsl_auth.py | H-Challenge/Response 3 etapas (~200B) |
-| **Detecção de Intrusão** | security/intrusion_detection.py | Desvio de fase Δφ > ε |
-| **Rotação LFSR** | security/key_rotation.py | Rotação de chaves via LFSR |
-| **π-Radical Operator** | pi_radical/pi_radical.py | Operador π-radical — 6 relações ρ₁-ρ₆ |
-| **Lattice 64 Perfis** | pi_radical/lattice_profiles.py | Lattice de 64 perfis harmônicos |
-| **W Matrix Fixed-Point** | pi_radical/w_matrix.py | Matriz W — ponto fixo espectral |
-| **Bound ρ₃ Quântico** | pi_radical/quantum_bound.py | Limite quântico ρ₃ |
-| **HALE Demo** | demo/hale_demo.py | Demonstração interativa HALE |
+| **Detec��o de Intrus�o** | security/intrusion_detection.py | Desvio de fase ?? > ? |
+| **Rota��o LFSR** | security/key_rotation.py | Rota��o de chaves via LFSR |
+| **?-Radical Operator** | pi_radical/pi_radical.py | Operador ?-radical - 6 rela��es ??-?? |
+| **Lattice 64 Perfis** | pi_radical/lattice_profiles.py | Lattice de 64 perfis harm�nicos |
+| **W Matrix Fixed-Point** | pi_radical/w_matrix.py | Matriz W - ponto fixo espectral |
+| **Bound ?? Qu�ntico** | pi_radical/quantum_bound.py | Limite qu�ntico ?? |
+| **HALE Demo** | demo/hale_demo.py | Demonstra��o interativa HALE |
 
 
-## ðŸŒ VisÃ£o Geral / Overview
+## �YO� Visão Geral / Overview
 
-### PortuguÃªs
+### Português
 
-O **Hubstry HALE Ecosystem** Ã© o repositÃ³rio meta-framework que serve como hub central
-de referÃªncia para todas as 4 publicaÃ§Ãµes acadÃªmicas e integra os 3 repositÃ³rios
-especializados do ecossistema Hubstry. Este repositÃ³rio mapeia as contribuiÃ§Ãµes
-de cada paper, estabelece a arquitetura de integraÃ§Ã£o e garante a conformidade
+O **Hubstry HALE Ecosystem** é o repositório meta-framework que serve como hub central
+de referência para todas as 4 publicações acadêmicas e integra os 3 repositórios
+especializados do ecossistema Hubstry. Este repositório mapeia as contribuições
+de cada paper, estabelece a arquitetura de integração e garante a conformidade
 licenciosa entre os componentes.
 
 ### English
@@ -48,7 +48,7 @@ establishes the integration architecture, and ensures license compliance across 
 
 ---
 
-## ðŸ“„ Paper Mapping / Mapeamento de PublicaÃ§Ãµes
+## �Y"" Paper Mapping / Mapeamento de Publicações
 
 | Paper | DOI | License | Repo(s) | Integration Type |
 |-------|-----|---------|---------|-----------------|
@@ -59,7 +59,7 @@ establishes the integration architecture, and ensures license compliance across 
 
 ---
 
-## ðŸ”— Cross-Linked Repositories / RepositÃ³rios Vinculados
+## �Y"- Cross-Linked Repositories / Repositórios Vinculados
 
 | Repository | Description | Primary Papers |
 |------------|-------------|----------------|
@@ -69,22 +69,22 @@ establishes the integration architecture, and ensures license compliance across 
 
 ---
 
-## ðŸ“œ License Compatibility Matrix
+## �Y"o License Compatibility Matrix
 
 | Paper | License | Commercial Use | Modification | Distribution | Derivatives |
 |-------|---------|----------------|--------------|--------------|-------------|
-| HALE v3.0 | **CC BY-NC-ND 4.0** | âŒ Non-commercial only | âŒ No derivatives | âœ… With attribution | âŒ No derivatives allowed |
-| pi*sqrt+Q | **CC BY 4.0** | âœ… Yes | âœ… Yes | âœ… With attribution | âœ… With same license |
-| pi*sqrt Hex | **CC BY 4.0** | âœ… Yes | âœ… Yes | âœ… With attribution | âœ… With same license |
-| HPG 1.0 | **CC BY 4.0** | âœ… Yes | âœ… Yes | âœ… With attribution | âœ… With same license |
+| HALE v3.0 | **CC BY-NC-ND 4.0** | �O Non-commercial only | �O No derivatives | �o. With attribution | �O No derivatives allowed |
+| pi*sqrt+Q | **CC BY 4.0** | �o. Yes | �o. Yes | �o. With attribution | �o. With same license |
+| pi*sqrt Hex | **CC BY 4.0** | �o. Yes | �o. Yes | �o. With attribution | �o. With same license |
+| HPG 1.0 | **CC BY 4.0** | �o. Yes | �o. Yes | �o. With attribution | �o. With same license |
 
 > **Note**: Paper 1 (HALE v3.0) uses CC BY-NC-ND 4.0, meaning its content can only be
-> **cited and referenced** â€” never modified or used as a basis for derivative works.
+> **cited and referenced** �?" never modified or used as a basis for derivative works.
 > Papers 2-4 use CC BY 4.0, allowing full adaptation and derivative works with attribution.
 
 ---
 
-## ðŸ—ï¸ Ecosystem Architecture / Arquitetura do Ecossistema
+## �Y�-️ Ecosystem Architecture / Arquitetura do Ecossistema
 
 ```mermaid
 graph TB
@@ -140,25 +140,25 @@ graph TB
 
 ---
 
-## ðŸ“‚ Repository Structure / Estrutura do RepositÃ³rio
+## �Y", Repository Structure / Estrutura do Repositório
 
 ```
 hubstry-hale-ecosystem/
-â”œâ”€â”€ README.md                          # This file - bilingual overview
-â”œâ”€â”€ LICENSE                            # CC BY 4.0
-â”œâ”€â”€ docs/
-â”‚   â”œâ”€â”€ paper-mapping.md               # Detailed paper-to-repo mapping
-â”‚   â”œâ”€â”€ ecosystem-architecture.md      # Full architecture with diagrams
-â”‚   â””â”€â”€ license-guide.md               # License compatibility guide
-â”œâ”€â”€ references/
-â”‚   â””â”€â”€ bibliography.bib               # BibTeX entries for all 4 DOIs
-â””â”€â”€ matrix/
-    â””â”€â”€ dependency_graph.py            # Dependency graph generator
+�"o�"?�"? README.md                          # This file - bilingual overview
+�"o�"?�"? LICENSE                            # CC BY 4.0
+�"o�"?�"? docs/
+�",   �"o�"?�"? paper-mapping.md               # Detailed paper-to-repo mapping
+�",   �"o�"?�"? ecosystem-architecture.md      # Full architecture with diagrams
+�",   �""�"?�"? license-guide.md               # License compatibility guide
+�"o�"?�"? references/
+�",   �""�"?�"? bibliography.bib               # BibTeX entries for all 4 DOIs
+�""�"?�"? matrix/
+    �""�"?�"? dependency_graph.py            # Dependency graph generator
 ```
 
 ---
 
-## ðŸ§® Mathematical Foundations / Fundamentos MatemÃ¡ticos
+## �Y�� Mathematical Foundations / Fundamentos Matemáticos
 
 The ecosystem is grounded in the **HALE (Harmonic Addressing & Labeling Equation)**
 framework and its extensions:
@@ -173,19 +173,19 @@ framework and its extensions:
 
 ---
 
-## ðŸ¤ ContribuiÃ§Ã£o / Contributing
+## �Y�� Contribuição / Contributing
 
 This is an academic meta-framework repository. Contributions should follow
 the license constraints of the referenced papers:
 
-1. **Paper 1 (HALE v3.0)**: Can only be cited/referenced â€” no derivative works
+1. **Paper 1 (HALE v3.0)**: Can only be cited/referenced �?" no derivative works
 2. **Papers 2-4**: Derivative works allowed with proper attribution under CC BY 4.0
 
 See [docs/license-guide.md](docs/license-guide.md) for full details.
 
 ---
 
-## ðŸ“– Citation / CitaÃ§Ã£o
+## �Y"- Citation / Citação
 
 When referencing this ecosystem, please cite all relevant papers:
 
@@ -201,7 +201,7 @@ When referencing this ecosystem, please cite all relevant papers:
 
 ---
 
-## ðŸ“‹ Badges
+## �Y"< Badges
 
 <p align="center">
   <img src="https://img.shields.io/badge/Papers-4-blue" alt="4 Papers"/>
