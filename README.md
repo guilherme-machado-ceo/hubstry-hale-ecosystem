@@ -7,34 +7,34 @@ Central hub that unifies 4 academic papers and cross-links 3 specialized reposit
 
 ---
 
-## Visao Geral / Overview
+## Visão Geral / Overview
 
-**Portugues**
-O Hubstry HALE Ecosystem e o repositorio meta-framework que serve como hub central de referencia para todas as 4 publicacoes academicas e integra os 3 repositorios especializados do ecossistema Hubstry.
+**Português**
+O Hubstry HALE Ecosystem é o repositório meta-framework que serve como hub central de referência para todas as 4 publicações acadêmicas e integra os 3 repositórios especializados do ecossistema Hubstry. Este repositório mapeia as contribuições de cada paper, estabelece a arquitetura de integração e garante a conformidade licenciosa entre os componentes.
 
 **English**
-The Hubstry HALE Ecosystem is the meta-framework repository serving as the central reference hub for all 4 academic publications and integrating the 3 specialized repositories of the Hubstry ecosystem.
+The Hubstry HALE Ecosystem is the meta-framework repository serving as the central reference hub for all 4 academic publications and integrating the 3 specialized repositories of the Hubstry ecosystem. This repository maps each paper contribution, establishes the integration architecture, and ensures license compliance across components.
 
 ## Incrementos / Latest Implementations
 
-| Modulo | Arquivo | Descricao |
+| Módulo | Arquivo | Descrição |
 |--------|---------|-----------|
 | **HALE Pipeline** | hale_core/hale_equation.py | Pipeline: f0 - H - h - psi - c - M - g |
-| **Funcoes psi1-psi4** | hale_core/psi_functions.py | 4 funcoes de enderecamento selecionaveis |
+| **Funções psi1-psi4** | hale_core/psi_functions.py | 4 funções de endereçamento selecionáveis |
 | **Omnigrid 2D** | hpg_core/omnigrid.py | Grade O_N = H_N x {-1,+1} com Euler |
-| **HPM 1.0** | hpg_core/hpm_config.py | 12 canais harmonicos (f0=16.384 kHz) |
-| **Sinal s(t) + FFT** | hpg_core/signal_processing.py | Sinal composto + decodificacao FFT |
-| **Verificacao Espectral** | hpg_core/spectral_verification.py | Integridade de razoes racionais |
+| **HPM 1.0** | hpg_core/hpm_config.py | 12 canais harmônicos (f0=16.384 kHz) |
+| **Sinal s(t) + FFT** | hpg_core/signal_processing.py | Sinal composto + decodificação FFT |
+| **Verificação Espectral** | hpg_core/spectral_verification.py | Integridade de razões racionais |
 | **HSL Auth** | security/hsl_auth.py | H-Challenge/Response 3 etapas (~200B) |
-| **Deteccao de Intrusao** | security/intrusion_detection.py | Desvio de fase delta_phi > epsilon |
-| **Rotacao LFSR** | security/key_rotation.py | Rotacao de chaves via LFSR |
-| **pi-Radical Operator** | pi_radical/pi_radical.py | Operador pi-radical - 6 relacoes rho |
-| **Lattice 64 Perfis** | pi_radical/lattice_profiles.py | Lattice de 64 perfis harmonicos |
+| **Detecção de Intrusão** | security/intrusion_detection.py | Desvio de fase delta_phi > epsilon |
+| **Rotação LFSR** | security/key_rotation.py | Rotação de chaves via LFSR |
+| **pi-Radical Operator** | pi_radical/pi_radical.py | Operador pi-radical - 6 relações rho |
+| **Lattice 64 Perfis** | pi_radical/lattice_profiles.py | Lattice de 64 perfis harmônicos |
 | **W Matrix Fixed-Point** | pi_radical/w_matrix.py | Matriz W - ponto fixo espectral |
-| **Bound rho3 Quantico** | pi_radical/quantum_bound.py | Limite quantico rho3 |
-| **HALE Demo** | demo/hale_demo.py | Demonstracao interativa HALE |
+| **Bound rho3 Quântico** | pi_radical/quantum_bound.py | Limite quântico rho3 |
+| **HALE Demo** | demo/hale_demo.py | Demonstração interativa HALE |
 
-## Paper Mapping / Mapeamento de Publicacoes
+## Paper Mapping / Mapeamento de Publicações
 
 | Paper | DOI | License | Repo(s) | Integration Type |
 |-------|-----|---------|---------|-----------------|
@@ -43,7 +43,7 @@ The Hubstry HALE Ecosystem is the meta-framework repository serving as the centr
 | pi*sqrt Hexa-Relational Algebra | 10.5281/zenodo.18776401 | CC BY 4.0 | qualia-hub-ecosystem | Full adaptation |
 | HPG 1.0 Harmonic Protocol Grid | 10.5281/zenodo.19056387 | CC BY 4.0 | iot-protocol-hubstry, hubstry-security | Full adaptation |
 
-## Cross-Linked Repositories / Repositorios Vinculados
+## Cross-Linked Repositories / Repositórios Vinculados
 
 | Repository | Description | Primary Papers |
 |-----------|-------------|---------------|
@@ -64,22 +64,22 @@ The Hubstry HALE Ecosystem is the meta-framework repository serving as the centr
 
 ## Ecosystem Architecture / Arquitetura do Ecossistema
 
-### Repository Structure / Estrutura do Repositorio
+### Repository Structure / Estrutura do Repositório
 
 
-## Mathematical Foundations / Fundamentos Matematicos
+## Mathematical Foundations / Fundamentos Matemáticos
 
 - **HALE Core:** Harmonic signal processing for IoT addressing and labeling
 - **pi*sqrt(f(A)):** Mathematical framework combining pi with square root of functional analysis applied to quantum computation
 - **Hexa-Relational Algebra:** Six-dimensional relational algebra for qualia processing and knowledge representation
 - **HPG (Harmonic Protocol Grid):** Grid-based protocol architecture for harmonic communication in IoT networks
 
-## Contribuicao / Contributing
+## Contribuição / Contributing
 
 - Paper 1 (HALE v3.0): Can only be cited/referenced -- no derivative works
 - Papers 2-4: Derivative works allowed with proper attribution under CC BY 4.0
 
-## Citation / Citacao
+## Citation / Citação
 
 ```bibtex
 @misc{hale-ecosystem-2025,
