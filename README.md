@@ -1,4 +1,4 @@
-﻿# Hubstry HALE Ecosystem
+# Hubstry HALE Ecosystem
 
 > **Meta-Framework** | Ecossistema Integrado de Pesquisa e Desenvolvimento
 >
@@ -9,6 +9,25 @@
 [![DOI: Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.18901934.svg)](https://doi.org/10.5281/zenodo.18901934)
 
 ---
+## Incrementos / Latest Implementations
+
+| Módulo | Arquivo | Descrição |
+|--------|---------|-----------|
+| **HALE Pipeline** | hale_core/hale_equation.py | Pipeline: f0 - H - h - ψ - c - M - g |
+| **Funções ψ1-ψ4** | hale_core/psi_functions.py | 4 funções de endereçamento selecionáveis |
+| **Omnigrid 2D** | hpg_core/omnigrid.py | Grade O_N = H_N × {-1,+1} com Euler |
+| **HPM 1.0** | hpg_core/hpm_config.py | 12 canais harmônicos (f0=16.384 kHz) |
+| **Sinal s(t) + FFT** | hpg_core/signal_processing.py | Sinal composto + decodificação FFT |
+| **Verificação Espectral** | hpg_core/spectral_verification.py | Integridade de razões racionais |
+| **HSL Auth** | security/hsl_auth.py | H-Challenge/Response 3 etapas (~200B) |
+| **Detecção de Intrusão** | security/intrusion_detection.py | Desvio de fase Δφ > ε |
+| **Rotação LFSR** | security/key_rotation.py | Rotação de chaves via LFSR |
+| **π-Radical Operator** | pi_radical/pi_radical.py | Operador π-radical — 6 relações ρ₁-ρ₆ |
+| **Lattice 64 Perfis** | pi_radical/lattice_profiles.py | Lattice de 64 perfis harmônicos |
+| **W Matrix Fixed-Point** | pi_radical/w_matrix.py | Matriz W — ponto fixo espectral |
+| **Bound ρ₃ Quântico** | pi_radical/quantum_bound.py | Limite quântico ρ₃ |
+| **HALE Demo** | demo/hale_demo.py | Demonstração interativa HALE |
+
 
 ## ðŸŒ VisÃ£o Geral / Overview
 
